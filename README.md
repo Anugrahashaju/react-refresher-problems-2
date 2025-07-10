@@ -86,7 +86,7 @@ Display error messages below each field if validation fails when the "Submit" bu
 ---
 
 **Problem 8: Image Gallery with Active Image (I)**
-
+    
 **Description:** Develop an `ImageGallery` component. It should display a main large image and a set of smaller "thumbnail" images below it. When a user clicks on a thumbnail, the main large image should update to display the image corresponding to the clicked thumbnail.
 
 **Concepts:** `useState` to manage the currently active image URL, `onClick` event on thumbnails, passing data (image URLs) as props.
