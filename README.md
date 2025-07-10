@@ -130,7 +130,7 @@ Here are 5 more React coding problems, incorporating **style manipulation** alon
 
 **Problem 11: Dynamic Box Resizer (I)**
 
-**Description:** Create a component `BoxResizer` that displays a `div` element (a box). Below the box, include two buttons: "Increase Size" and "Decrease Size". Clicking these buttons should increase or decrease the width and height of the box by a fixed amount (e.g., 20px). Ensure the box doesn't shrink to less than 20px by 20px.
+**Description:** Create a component `BoxResizer` that displays a `div` element (a box).  Below the box, include two buttons: "Increase Size" and "Decrease Size". Clicking these buttons should increase or decrease the width and height of the box by a fixed amount (e.g., 20px). Ensure the box doesn't shrink to less than 20px by 20px.
 
 **Concepts:** `useState` for box dimensions (width, height), `onClick` event, **inline styles** or **dynamic CSS classes** (`style` prop with an object), conditional logic for minimum size.
 

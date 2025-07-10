@@ -1,10 +1,14 @@
 import "./App.css";
 import { Accordion } from "./componets/Accordion";
 import { CharacterCount } from "./componets/CharacterCounter";
+import { ColorPicker } from "./componets/ColorPicker";
+import { Draggable } from "./componets/Draggable";
+import { DynamicBox } from "./componets/DynamicBox";
 import { FilterableList } from "./componets/FilterableList";
 import { FormValidation } from "./componets/FormValidation";
 import { ImageGallery } from "./componets/ImageGallery";
 import { ParentComponent } from "./componets/ParentComponent";
+import { ProgressBar } from "./componets/ProgressBar";
 import { SimpleCounter } from "./componets/SimpleCounter";
 import { TextInputMirror } from "./componets/TextInputMirror";
 import { ThemeToggle } from "./componets/ThemeToggle";
@@ -60,8 +64,13 @@ function App() {
     <h3 style={{color:'red'}}>**Problem 9: Accordion/Collapsible Panel (I)**</h3>
     <ParentComponent/>
     <h3 style={{color:'red'}}>**Problem 11: Dynamic Box Resizer (I)**</h3>
-    
-
+    <DynamicBox/>
+    <h3 style={{color:'red'}}>**Problem 12: Color Picker (I)**</h3>
+    <ColorPicker/>
+    <h3 style={{color:'red'}}>**Problem 13: Progress Bar (I)**</h3>
+    <ProgressBar/>
+    <h3 style={{color:'red'}}> **Problem 15: Draggable Square (A)**</h3>
+    <Draggable/>
   </>
   );
   
