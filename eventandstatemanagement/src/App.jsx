@@ -1,7 +1,10 @@
 import "./App.css";
+import { Accordion } from "./componets/Accordion";
 import { CharacterCount } from "./componets/CharacterCounter";
 import { FilterableList } from "./componets/FilterableList";
 import { FormValidation } from "./componets/FormValidation";
+import { ImageGallery } from "./componets/ImageGallery";
+import { ParentComponent } from "./componets/ParentComponent";
 import { SimpleCounter } from "./componets/SimpleCounter";
 import { TextInputMirror } from "./componets/TextInputMirror";
 import { ThemeToggle } from "./componets/ThemeToggle";
@@ -10,13 +13,27 @@ import { TodoList } from "./componets/TodoList";
 function App() {
 
   const imagesUrl = [
+    "https://picsum.photos/500/200",
     "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"   
+    "https://picsum.photos/300/300",
+    "https://picsum.photos/500/300",
+    "https://picsum.photos/400/200"   
   ]
       
+  const panels = [
+    {
+      title : "What is React ?",
+      content: "React is a java script library for building user interfaces"
+    },
+    {
+      title: "What is a componenet?",
+      content:"Components are reusable UI elements in react"
+    },
+    {
+      title:"What is state",
+      content:"State is a build-In object "
+    }
+  ]
   
 
   return(
@@ -37,9 +54,14 @@ function App() {
     <h3 style={{color:'red'}}>**Problem 7: Simple To-Do List (I)**</h3>
     <TodoList/>
     <h3 style={{color:'red'}}>**Problem 8: Image Gallery with Active Image (I)**</h3>
+    <ImageGallery images={imagesUrl}/>
+    <h3 style={{color:'red'}}>**Problem 9: Accordion/Collapsible Panel (I)**</h3>
+    <Accordion panels={panels}/>
+    <h3 style={{color:'red'}}>**Problem 9: Accordion/Collapsible Panel (I)**</h3>
+    <ParentComponent/>
+    <h3 style={{color:'red'}}>**Problem 11: Dynamic Box Resizer (I)**</h3>
     
 
- 
   </>
   );
   
